@@ -1,0 +1,33 @@
+{
+  "name": "api-autenticacao",
+  "version": "1.0.0",
+  "description": "Base de API para demonstrar a utilizaçao do Passport.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/nodemon   Server/app.js",
+    "start": "node Server/app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosNeto2804/api-autenticacao.git"
+  },
+  "author": "CarlosNeto2804",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosNeto2804/api-autenticacao/issues"
+  },
+  "homepage": "https://github.com/CarlosNeto2804/api-autenticacao#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
