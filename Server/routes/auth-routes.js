@@ -9,7 +9,7 @@ module.exports = class AuthRouter {
       passport.authenticate("github", { failureRedirect: `/` }),
       AuthController.authenticate
     );
-    
+
     app.get(
       "/google",
       passport.authenticate("google", { scope: ["profile", "email"] })
@@ -17,6 +17,15 @@ module.exports = class AuthRouter {
     app.get(
       "/auth/google/callback",
       passport.authenticate("google", { failureRedirect: `/` }),
+      AuthController.authenticate
+    );
+    app.get(
+      "/facebook",
+      passport.authenticate("facebook", { scope: ["public_profile"] })
+    );
+    app.get(
+      "/auth/facebook/callback",
+      passport.authenticate("facebook", { failureRedirect: `/` }),
       AuthController.authenticate
     );
   }

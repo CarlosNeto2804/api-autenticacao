@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/nodemon   Server/app.js",
     "start": "node Server/app.js"
-
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
     "http": "0.0.0",
     "nodemon": "^1.19.4",
     "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
     "passport-github": "^1.1.0",
     "passport-google-oauth20": "^2.0.0"
   }
